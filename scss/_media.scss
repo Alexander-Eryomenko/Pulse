@@ -60,23 +60,37 @@
 
 @media (max-width: 575px) {
   .promo {
-    
+    min-height: 505px;
+  padding: 21px 20px 66px;
+  background: url(../img/bg/yoska.jpg) center center/cover no-repeat;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+  }
     &__header {
       font-size: 20px;
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
     }
     &__subheader {
       font-size: 13px;
     }
     &__icons {
       width: 295px;
+      margin-top: 25px;
+
       
     }
     &__icon {
       font-size: 12px;
     }
     &__link {
-      font-size: 13px;
+      font-size: 16px;
       margin-top: 15px;
+      margin-left: 28%;
     }
   }
   .header {
@@ -92,12 +106,10 @@
     }
   }
   .button {
-    width: 110px;
-    font-size: 9px;
-    height: 25px;
 
     &_main {
-      width: 230px;
+      font-size: 16px;
+      width: 70%;
       margin-top: 40px;
     }
   }
