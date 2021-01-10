@@ -9,8 +9,9 @@
   .advantages {
     padding: 70px 25px 67px;
   }
-  
 }
+
+
 
 @media (max-width: 767px) {
   .promo {
@@ -37,6 +38,9 @@
       width: 303px;
       margin-top: 67px;
     }
+    &_submit {
+    width: 100%;
+    }
   }
   .advantages {
     padding: 70px 15px 67px;
@@ -56,13 +60,27 @@
       
     }
   }
+  .consultation {
+    &__descr {
+      text-align: center;
+    }
+  }
+  .title {
+    &_left {
+      text-align: center;
+  
+    }
+  }
+  .feed-form {
+    margin: 36px auto 0;
+  }
 }
 
 @media (max-width: 575px) {
   .promo {
     min-height: 505px;
-  padding: 21px 20px 66px;
-  background: url(../img/bg/yoska.jpg) center center/cover no-repeat;
+    padding: 21px 20px 66px;
+    background: url(../img/bg/header-bg.jpg) center center/cover no-repeat;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -150,6 +168,27 @@
       line-height: 16px;
       margin-top: 15px;
       
+    }
+  }
+  .consultation {
+    .title {
+      &_left {
+        font-size: 20px;
+      }
+    }
+    &__descr {
+      font-size: 15px;
+    }
+    .feed-form {
+      input {
+        height: 35px;
+      }
+    }
+    .button {
+      &_submit {
+        height: 45px;
+        font-size: 14px;
+      }
     }
   }
 }
