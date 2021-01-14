@@ -6,7 +6,12 @@
     position: relative;
     width: 750px;
     margin: 0 auto;
-    height: 580px;
+    max-height: 580px;
+    div {
+      img {
+        width: 100%;
+      }
+    }
   }
   .slick-prev, .slick-next {
     position: absolute;

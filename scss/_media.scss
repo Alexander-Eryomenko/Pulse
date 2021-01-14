@@ -9,6 +9,21 @@
   .advantages {
     padding: 70px 25px 67px;
   }
+  .consultation {
+    padding-left: 60px;
+  }
+  .carousel {
+    &__inner {
+      padding: 0 40px;
+      width: 768px;
+    }
+  }
+  .catalog {
+    padding: 0 20px;
+    &__content {
+      justify-content: space-around;
+    }
+  }
 }
 
 
@@ -41,6 +56,12 @@
     &_submit {
     width: 100%;
     }
+    &_mini {
+      width: 90px;
+      height: 35px;
+      margin: 0;
+      font-size: 13px;
+    }
   }
   .advantages {
     padding: 70px 15px 67px;
@@ -61,6 +82,7 @@
     }
   }
   .consultation {
+    padding-left: 0;
     &__descr {
       text-align: center;
     }
@@ -73,6 +95,14 @@
   }
   .feed-form {
     margin: 36px auto 0;
+  }
+  .carousel {
+    &__inner {
+      width: 576px;
+    }
+  }
+  .catalog-item {
+    width: 250px;
   }
 }
 
@@ -188,6 +218,28 @@
       &_submit {
         height: 45px;
         font-size: 14px;
+      }
+    }
+  }
+  .carousel {
+    &__inner {
+      width: 320px;
+    }
+  }
+  .catalog {
+    &__tabs {
+
+    }
+    &__tab {
+      border-radius: 10px;
+      margin: 0 auto;
+      width: 84px;
+      height: 45px;
+      font-size: 12px;
+      line-height: 20px;
+      transform: none;
+      div {
+        transform: none;
       }
     }
   }

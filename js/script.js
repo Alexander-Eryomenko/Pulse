@@ -4,12 +4,37 @@ $(document).ready(function(){
     adaptiveHeight: false,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/chevron-left.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/slider/chevron-right.png"></button>',
+    swipeToSlide: true,
+    mobileFirst: true,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 991,
         settings: {
-          dots: true,
-          arrows: false
+          autoplay: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          autoplay: true,
+          prevArrow: false,
+          nextArrow: false
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          autoplay: true,
+          prevArrow: false,
+          nextArrow: false
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          autoplay: true,
+          prevArrow: false,
+          nextArrow: false
         }
       }
     ]
