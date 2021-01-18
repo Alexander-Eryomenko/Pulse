@@ -229,7 +229,7 @@
   }
   .carousel {
     &__inner {
-      height: 370px;
+      height: 260px;
     }
   }
   .catalog {
@@ -251,6 +251,11 @@
       justify-content: center;
       div {
         transform: none;
+      }
+    }
+    .catalog-item {
+      &__descr {
+        width: 310px;
       }
     }
   }
