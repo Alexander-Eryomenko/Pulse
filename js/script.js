@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('.carousel__inner').slick({
     speed: 1000,
     adaptiveHeight: false,
+    slidesToShow: 1,
     prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/chevron-left.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="img/slider/chevron-right.png"></button>',
     responsive: [
@@ -9,6 +10,8 @@ $(document).ready(function(){
         breakpoint: 991,
         settings: {
           autoplay: true,
+          prevArrow: false,
+          nextArrow: false
         }
       },
       {
@@ -129,7 +132,7 @@ $(window).scroll(function() {
     }
 });
 
-$("a[href^='#']").click(function(){
+$("a[href^=#up]").click(function(){
     const _href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;

@@ -14,8 +14,8 @@
   }
   .carousel {
     &__inner {
-      padding: 0 40px;
-      width: 768px;
+      padding: 0 20px;
+      width: 100%;
     }
   }
   .catalog {
@@ -64,7 +64,11 @@
     }
   }
   .advantages {
-    padding: 70px 15px 67px;
+    padding: 40px 30px 67px;
+    &__items {
+      margin-top: 35px;
+      // padding: 0 50px;
+    }
     &__item {
       width: 160px;
     }
@@ -82,7 +86,8 @@
     }
   }
   .consultation {
-    padding-left: 0;
+    min-height: 620px;
+    padding: 50px 0 50px;
     &__descr {
       text-align: center;
     }
@@ -97,12 +102,14 @@
     margin: 36px auto 0;
   }
   .carousel {
-    &__inner {
-      width: 576px;
-    }
+    width: 100%;
+    padding: 40px 10px;
   }
   .catalog-item {
-    width: 250px;
+   width: 100%;
+   &__footer {
+     justify-content: space-around;
+   }
   }
 }
 
@@ -138,7 +145,6 @@
     &__link {
       font-size: 16px;
       margin-top: 15px;
-      margin-left: 28%;
     }
   }
   .header {
@@ -223,24 +229,40 @@
   }
   .carousel {
     &__inner {
-      width: 400px;
+      height: 370px;
     }
   }
   .catalog {
-    &__tabs {
 
+    &__tabs {
+      margin-top: 25px;
+      justify-content: space-around;
     }
     &__tab {
       border-radius: 10px;
-      margin: 0 auto;
-      width: 84px;
+      // margin: 0 auto;
+      width: 100px;
       height: 45px;
       font-size: 12px;
       line-height: 20px;
       transform: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       div {
         transform: none;
       }
+    }
+  }
+  .review {
+    .title {
+      font-size: 25px;
+    }
+    &__item {
+      padding: 0 20px;
+    }
+    &__img-box {
+      height: 100px;
     }
   }
 }
